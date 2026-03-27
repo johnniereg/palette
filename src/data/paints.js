@@ -1,788 +1,244 @@
 export const paints = [
-  // Citadel Base
-  {
-    id: "citadel-abaddon-black",
-    name: "Abaddon Black",
-    brand: "Citadel",
-    type: "Base",
-    colourFamily: "Blacks & Whites",
-    description: "Pure, flat black. Excellent for basecoating dark armour or filling recesses.",
-    hex: "#231F20"
-  },
-  {
-    id: "citadel-leadbelcher",
-    name: "Leadbelcher",
-    brand: "Citadel",
-    type: "Base",
-    colourFamily: "Metallics",
-    description: "Dull, gunmetal grey with metallic sheen. Base for most silver metallic effects.",
-    hex: "#6B7280"
-  },
-  {
-    id: "citadel-retributor-armour",
-    name: "Retributor Armour",
-    brand: "Citadel",
-    type: "Base",
-    colourFamily: "Metallics",
-    description: "Warm, rich gold with full metallic coverage. Excellent for gold armour basecoat.",
-    hex: "#C9A356"
-  },
-  {
-    id: "citadel-mephiston-red",
-    name: "Mephiston Red",
-    brand: "Citadel",
-    type: "Base",
-    colourFamily: "Reds",
-    description: "Bright, warm red. Punchy colour, excellent for red power armour.",
-    hex: "#A41E27"
-  },
-  {
-    id: "citadel-khorne-red",
-    name: "Khorne Red",
-    brand: "Citadel",
-    type: "Base",
-    colourFamily: "Reds",
-    description: "Deep crimson red with slight warmth. Good for darker red robes and armour.",
-    hex: "#8B1C1C"
-  },
-  {
-    id: "citadel-screamer-pink",
-    name: "Screamer Pink",
-    brand: "Citadel",
-    type: "Base",
-    colourFamily: "Purples & Pinks",
-    description: "Vibrant, hot pink. Great for bright female models or neon effects.",
-    hex: "#E63D6B"
-  },
-  {
-    id: "citadel-macragge-blue",
-    name: "Macragge Blue",
-    brand: "Citadel",
-    type: "Base",
-    colourFamily: "Blues",
-    description: "Rich, ultramarine blue. The classic Ultramarines power armour colour.",
-    hex: "#1E3A8A"
-  },
-  {
-    id: "citadel-altdorf-guard-blue",
-    name: "Altdorf Guard Blue",
-    brand: "Citadel",
-    type: "Base",
-    colourFamily: "Blues",
-    description: "Deep royal blue with slight purple tone. For darker blue cloaks and armour.",
-    hex: "#1B4472"
-  },
-  {
-    id: "citadel-castellan-green",
-    name: "Castellan Green",
-    brand: "Citadel",
-    type: "Base",
-    colourFamily: "Greens",
-    description: "Dark, warm green. Good for moss, vegetation, and dark green cloth.",
-    hex: "#2F5233"
-  },
-  {
-    id: "citadel-caliban-green",
-    name: "Caliban Green",
-    brand: "Citadel",
-    type: "Base",
-    colourFamily: "Greens",
-    description: "Deep forest green, almost black-green. Perfect for Dark Angels and dense foliage.",
-    hex: "#1A2B1A"
-  },
-  {
-    id: "citadel-XV-88",
-    name: "XV-88",
-    brand: "Citadel",
-    type: "Base",
-    colourFamily: "Browns & Leathers",
-    description: "Warm, medium brown. Great for leather, wood, and weathered metal.",
-    hex: "#7B5D4F"
-  },
-  {
-    id: "citadel-rhinox-hide",
-    name: "Rhinox Hide",
-    brand: "Citadel",
-    type: "Base",
-    colourFamily: "Browns & Leathers",
-    description: "Dark brown with slight warmth. Good for leather, dark wood, and soil.",
-    hex: "#3D2817"
-  },
-  {
-    id: "citadel-zandri-dust",
-    name: "Zandri Dust",
-    brand: "Citadel",
-    type: "Base",
-    colourFamily: "Yellows & Oranges",
-    description: "Pale, sandy tan. Excellent for deserts, bone, and aged parchment.",
-    hex: "#C4A868"
-  },
-  {
-    id: "citadel-ushabti-bone",
-    name: "Ushabti Bone",
-    brand: "Citadel",
-    type: "Base",
-    colourFamily: "Whites & Creams",
-    description: "Warm, creamy bone colour. Perfect for bone, cream cloth, and old ivory.",
-    hex: "#D4C5B0"
-  },
-  {
-    id: "citadel-the-fang",
-    name: "The Fang",
-    brand: "Citadel",
-    type: "Base",
-    colourFamily: "Cool Greys",
-    description: "Cold, slate blue-grey. Excellent for Space Wolf armour and cold grey tones.",
-    hex: "#425563"
-  },
 
-  // Citadel Layer
-  {
-    id: "citadel-evil-sunz-scarlet",
-    name: "Evil Sunz Scarlet",
-    brand: "Citadel",
-    type: "Layer",
-    colourFamily: "Reds",
-    description: "Bright orange-red. Mid-tone for layering warm reds.",
-    hex: "#D93030"
-  },
-  {
-    id: "citadel-wazdakka-red",
-    name: "Wazdakka Red",
-    brand: "Citadel",
-    type: "Layer",
-    colourFamily: "Reds",
-    description: "Warm, bright red. Perfect for layering ork reds and mid-tone highlights.",
-    hex: "#C41E2E"
-  },
-  {
-    id: "citadel-cadian-fleshtone",
-    name: "Cadian Fleshtone",
-    brand: "Citadel",
-    type: "Layer",
-    colourFamily: "Skin Tones",
-    description: "Warm, peachy skin tone. Good for European/human skin highlights.",
-    hex: "#D4956F"
-  },
-  {
-    id: "citadel-elysian-green",
-    name: "Elysian Green",
-    brand: "Citadel",
-    type: "Layer",
-    colourFamily: "Greens",
-    description: "Bright, mid-tone green. Good for layering greens and vegetation.",
-    hex: "#6B9E4A"
-  },
-  {
-    id: "citadel-skragg-brown",
-    name: "Skragg Brown",
-    brand: "Citadel",
-    type: "Layer",
-    colourFamily: "Browns & Leathers",
-    description: "Mid-tone warm brown. Great for leather and wood highlights.",
-    hex: "#8B6F47"
-  },
-  {
-    id: "citadel-tau-light-ochre",
-    name: "Tau Light Ochre",
-    brand: "Citadel",
-    type: "Layer",
-    colourFamily: "Yellows & Oranges",
-    description: "Pale golden-yellow. Good for bone and desert highlights.",
-    hex: "#E8C88A"
-  },
-  {
-    id: "citadel-fenrisian-grey",
-    name: "Fenrisian Grey",
-    brand: "Citadel",
-    type: "Layer",
-    colourFamily: "Cool Greys",
-    description: "Cool, light grey-blue. Good for layering cold grey tones.",
-    hex: "#8B9DBB"
-  },
-  {
-    id: "citadel-caledor-sky",
-    name: "Caledor Sky",
-    brand: "Citadel",
-    type: "Layer",
-    colourFamily: "Blues",
-    description: "Bright sky blue. Mid-tone for blue layering and cloth.",
-    hex: "#4A7BA7"
-  },
-  {
-    id: "citadel-warlord-purple",
-    name: "Warlord Purple",
-    brand: "Citadel",
-    type: "Layer",
-    colourFamily: "Purples & Pinks",
-    description: "Deep, warm purple. Good for purple robes and dark cloth.",
-    hex: "#6B3F7B"
-  },
-  {
-    id: "citadel-leadbelcher-gloss",
-    name: "Ironbreaker",
-    brand: "Citadel",
-    type: "Layer",
-    colourFamily: "Metallics",
-    description: "Bright, shiny silver. Excellent for highlights on silver metallics.",
-    hex: "#C0C0C0"
-  },
+  // ─── CITADEL BASE ───────────────────────────────────────────────────────────
+  { id: "citadel-abaddon-black", name: "Abaddon Black", brand: "Citadel", type: "Base", colourFamily: "Blacks & Whites", description: "Pure, flat black. The go-to basecoat for dark armour and black cloth.", hex: "#231F20" },
+  { id: "citadel-white-scar", name: "White Scar", brand: "Citadel", type: "Base", colourFamily: "Blacks & Whites", description: "Bright, pure white. Good for snow effects, bones highlights, and bright cloth.", hex: "#FFFFFF" },
+  { id: "citadel-corax-white", name: "Corax White", brand: "Citadel", type: "Base", colourFamily: "Blacks & Whites", description: "Slightly off-white with a cool tone. Smoother base for layering up to bright white.", hex: "#F0EEF0" },
+  { id: "citadel-wraithbone", name: "Wraithbone", brand: "Citadel", type: "Base", colourFamily: "Whites & Creams", description: "Warm, pale cream-white. Excellent undercoat for Contrast paints and bone tones.", hex: "#F5EDD0" },
+  { id: "citadel-averland-sunset", name: "Averland Sunset", brand: "Citadel", type: "Base", colourFamily: "Yellows & Oranges", description: "Bright, warm golden-yellow. The base for Imperial Fists and yellow armour.", hex: "#E8A820" },
+  { id: "citadel-jokaero-orange", name: "Jokaero Orange", brand: "Citadel", type: "Base", colourFamily: "Yellows & Oranges", description: "Bright, vivid orange. Base for orange armour and flame effects.", hex: "#E8601C" },
+  { id: "citadel-mephiston-red", name: "Mephiston Red", brand: "Citadel", type: "Base", colourFamily: "Reds", description: "Bright, warm red. The go-to base for red power armour.", hex: "#A41E27" },
+  { id: "citadel-khorne-red", name: "Khorne Red", brand: "Citadel", type: "Base", colourFamily: "Reds", description: "Deep crimson red. Good for darker red armour and robes.", hex: "#8B1C1C" },
+  { id: "citadel-screamer-pink", name: "Screamer Pink", brand: "Citadel", type: "Base", colourFamily: "Purples & Pinks", description: "Vibrant hot pink. Base for Slaanesh-themed and bright pink schemes.", hex: "#C0335A" },
+  { id: "citadel-naggaroth-night", name: "Naggaroth Night", brand: "Citadel", type: "Base", colourFamily: "Purples & Pinks", description: "Deep, dark purple with cool undertone. For dark elf cloth and shadow purples.", hex: "#2E1F42" },
+  { id: "citadel-xereus-purple", name: "Xereus Purple", brand: "Citadel", type: "Base", colourFamily: "Purples & Pinks", description: "Mid-tone, rich purple. Good base for vibrant purple robes.", hex: "#4A1E6E" },
+  { id: "citadel-kantor-blue", name: "Kantor Blue", brand: "Citadel", type: "Base", colourFamily: "Blues", description: "Very dark navy blue. Deep base for blue armour and cloth.", hex: "#0F2352" },
+  { id: "citadel-macragge-blue", name: "Macragge Blue", brand: "Citadel", type: "Base", colourFamily: "Blues", description: "Rich ultramarine blue. The classic Ultramarines power armour colour.", hex: "#1E3A8A" },
+  { id: "citadel-altdorf-guard-blue", name: "Altdorf Guard Blue", brand: "Citadel", type: "Base", colourFamily: "Blues", description: "Deep royal blue with a slight purple tone. For darker blue cloaks and armour.", hex: "#1B4472" },
+  { id: "citadel-sotek-green", name: "Sotek Green", brand: "Citadel", type: "Base", colourFamily: "Greens", description: "Bright teal-green. Perfect for Seraphon scales and vivid green-blue armour.", hex: "#1A7A6E" },
+  { id: "citadel-waaagh-flesh", name: "Waaagh! Flesh", brand: "Citadel", type: "Base", colourFamily: "Greens", description: "Dark, dirty green. Standard base for Ork and Goblin skin.", hex: "#2A4A2A" },
+  { id: "citadel-castellan-green", name: "Castellan Green", brand: "Citadel", type: "Base", colourFamily: "Greens", description: "Dark, warm green. Good for camouflage, moss, and vegetation.", hex: "#2F5233" },
+  { id: "citadel-caliban-green", name: "Caliban Green", brand: "Citadel", type: "Base", colourFamily: "Greens", description: "Very deep forest green, almost black-green. Perfect for Dark Angels.", hex: "#1A2B1A" },
+  { id: "citadel-death-guard-green", name: "Death Guard Green", brand: "Citadel", type: "Base", colourFamily: "Greens", description: "Muted, pale greenish-grey. The starting point for Nurgle and plague miniatures.", hex: "#6D7C4B" },
+  { id: "citadel-bugmans-glow", name: "Bugman's Glow", brand: "Citadel", type: "Base", colourFamily: "Skin Tones", description: "Deep warm salmon-pink. The classic starting point for human skin tones.", hex: "#9B5946" },
+  { id: "citadel-rakarth-flesh", name: "Rakarth Flesh", brand: "Citadel", type: "Base", colourFamily: "Skin Tones", description: "Pale, cool cream-pink. Good for undead skin and very light complexions.", hex: "#C5AA91" },
+  { id: "citadel-ionrach-skin", name: "Ionrach Skin", brand: "Citadel", type: "Base", colourFamily: "Skin Tones", description: "Very pale, cool toned skin base. Good for pale elves and ghostly models.", hex: "#C8B9A8" },
+  { id: "citadel-steel-legion-drab", name: "Steel Legion Drab", brand: "Citadel", type: "Base", colourFamily: "Browns & Leathers", description: "Warm khaki-brown. Classic for Imperial Guard uniforms and desert equipment.", hex: "#7A6840" },
+  { id: "citadel-XV-88", name: "XV-88", brand: "Citadel", type: "Base", colourFamily: "Browns & Leathers", description: "Warm medium brown. Great for leather, wood, and weathered surfaces.", hex: "#7B5D4F" },
+  { id: "citadel-rhinox-hide", name: "Rhinox Hide", brand: "Citadel", type: "Base", colourFamily: "Browns & Leathers", description: "Dark warm brown. Good for leather, dark wood, and soil.", hex: "#3D2817" },
+  { id: "citadel-doombull-brown", name: "Doombull Brown", brand: "Citadel", type: "Base", colourFamily: "Browns & Leathers", description: "Very dark red-brown. For dark leather and rich brown bases.", hex: "#5C1F1F" },
+  { id: "citadel-zandri-dust", name: "Zandri Dust", brand: "Citadel", type: "Base", colourFamily: "Yellows & Oranges", description: "Pale sandy tan. Excellent for desert, bone, and aged parchment.", hex: "#C4A868" },
+  { id: "citadel-ushabti-bone", name: "Ushabti Bone", brand: "Citadel", type: "Base", colourFamily: "Whites & Creams", description: "Warm creamy bone colour. Perfect for skeletal models, cream cloth, and old ivory.", hex: "#D4C5B0" },
+  { id: "citadel-celestra-grey", name: "Celestra Grey", brand: "Citadel", type: "Base", colourFamily: "Cool Greys", description: "Light warm grey. Good for grey armour and lighter metallic bases.", hex: "#9AADBB" },
+  { id: "citadel-mechanicus-standard-grey", name: "Mechanicus Standard Grey", brand: "Citadel", type: "Base", colourFamily: "Cool Greys", description: "Medium cool grey. The base for Adeptus Mechanicus schemes and grey armour.", hex: "#5C6A70" },
+  { id: "citadel-dawnstone", name: "Dawnstone", brand: "Citadel", type: "Base", colourFamily: "Cool Greys", description: "Medium-light cool grey. Good for grey cloth and stone highlights.", hex: "#7A8A8A" },
+  { id: "citadel-the-fang", name: "The Fang", brand: "Citadel", type: "Base", colourFamily: "Cool Greys", description: "Cold slate blue-grey. The base for Space Wolf armour.", hex: "#425563" },
+  { id: "citadel-leadbelcher", name: "Leadbelcher", brand: "Citadel", type: "Base", colourFamily: "Metallics", description: "Dull gunmetal grey with metallic sheen. The base for most silver metallic effects.", hex: "#6B7280" },
+  { id: "citadel-balthasar-gold", name: "Balthasar Gold", brand: "Citadel", type: "Base", colourFamily: "Metallics", description: "Dark antique gold. The base for rich, aged gold detail.", hex: "#8C6A2E" },
+  { id: "citadel-screaming-bell", name: "Screaming Bell", brand: "Citadel", type: "Base", colourFamily: "Metallics", description: "Dark, slightly greenish bronze. Good for dark bronze and old metal.", hex: "#8B6914" },
+  { id: "citadel-retributor-armour", name: "Retributor Armour", brand: "Citadel", type: "Base", colourFamily: "Metallics", description: "Warm rich gold with full metallic coverage. Base for bright gold armour.", hex: "#C9A356" },
+  { id: "citadel-warplock-bronze", name: "Warplock Bronze", brand: "Citadel", type: "Base", colourFamily: "Metallics", description: "Deep, dark bronze with purple-brown tone. Great for old bronze details.", hex: "#6E4A3A" },
+  { id: "citadel-incubi-darkness", name: "Incubi Darkness", brand: "Citadel", type: "Base", colourFamily: "Greens", description: "Very dark teal-green. For Drukhari and dark, jewel-tone schemes.", hex: "#1A3A38" },
 
-  // Citadel Shade
-  {
-    id: "citadel-agrax-earthshade",
-    name: "Agrax Earthshade",
-    brand: "Citadel",
-    type: "Shade",
-    colourFamily: "Browns & Leathers",
-    description: "Warm, murky brown wash. Excellent for adding depth and weathering to browns and metallics.",
-    hex: "#4A3D2A"
-  },
-  {
-    id: "citadel-nuln-oil",
-    name: "Nuln Oil",
-    brand: "Citadel",
-    type: "Shade",
-    colourFamily: "Blacks & Whites",
-    description: "Dark, oily black wash. Deepens recesses and adds shadow definition everywhere.",
-    hex: "#0A0A0A"
-  },
-  {
-    id: "citadel-carroburg-crimson",
-    name: "Carroburg Crimson",
-    brand: "Citadel",
-    type: "Shade",
-    colourFamily: "Reds",
-    description: "Deep red wash. Adds richness and shadow to reds and pink tones.",
-    hex: "#4A1010"
-  },
-  {
-    id: "citadel-drakenhof-nightshade",
-    name: "Drakenhof Nightshade",
-    brand: "Citadel",
-    type: "Shade",
-    colourFamily: "Purples & Pinks",
-    description: "Dark purple wash. Great for shadowing purples and adding mystery.",
-    hex: "#2A1A2A"
-  },
-  {
-    id: "citadel-guilliman-blue",
-    name: "Guilliman Blue",
-    brand: "Citadel",
-    type: "Shade",
-    colourFamily: "Blues",
-    description: "Deep blue wash. Shades blues and gives cold metallic depth.",
-    hex: "#1A2A4A"
-  },
-  {
-    id: "citadel-biel-tan-green",
-    name: "Biel-tan Green",
-    brand: "Citadel",
-    type: "Shade",
-    colourFamily: "Greens",
-    description: "Dark, murky green wash. Adds depth to greens and vegetation.",
-    hex: "#1A3A1A"
-  },
+  // ─── CITADEL LAYER ───────────────────────────────────────────────────────────
+  { id: "citadel-praxeti-white", name: "Ulthuan Grey", brand: "Citadel", type: "Layer", colourFamily: "Blacks & Whites", description: "Pale, cool blue-grey. Used as a pre-highlight before pure white.", hex: "#DAE4E8" },
+  { id: "citadel-pallid-wych-flesh", name: "Pallid Wych Flesh", brand: "Citadel", type: "Layer", colourFamily: "Skin Tones", description: "Very pale, almost white skin tone. Final highlight for light or undead skin.", hex: "#E8D5C0" },
+  { id: "citadel-kislev-flesh", name: "Kislev Flesh", brand: "Citadel", type: "Layer", colourFamily: "Skin Tones", description: "Light, warm peachy skin tone. Mid-highlight for human skin.", hex: "#D4A882" },
+  { id: "citadel-cadian-fleshtone", name: "Cadian Fleshtone", brand: "Citadel", type: "Layer", colourFamily: "Skin Tones", description: "Warm, peachy mid-tone skin. Good for building up European-tone skin.", hex: "#D4956F" },
+  { id: "citadel-wild-rider-red", name: "Wild Rider Red", brand: "Citadel", type: "Layer", colourFamily: "Reds", description: "Bright warm red with orange tint. Mid-highlight for red armour.", hex: "#E83020" },
+  { id: "citadel-evil-sunz-scarlet", name: "Evil Sunz Scarlet", brand: "Citadel", type: "Layer", colourFamily: "Reds", description: "Bright orange-red. Mid-tone for layering warm reds.", hex: "#D93030" },
+  { id: "citadel-fire-dragon-bright", name: "Fire Dragon Bright", brand: "Citadel", type: "Layer", colourFamily: "Reds", description: "Vivid orange, almost flame-coloured. Upper highlight for fire and warm orange.", hex: "#F04A18" },
+  { id: "citadel-squig-orange", name: "Squig Orange", brand: "Citadel", type: "Layer", colourFamily: "Yellows & Oranges", description: "Mid-tone warm orange. Good for orange layering and skin highlights.", hex: "#E06030" },
+  { id: "citadel-flash-gitz-yellow", name: "Flash Gitz Yellow", brand: "Citadel", type: "Layer", colourFamily: "Yellows & Oranges", description: "Bright, clean yellow. Highlight for yellow armour and warm tones.", hex: "#F5C800" },
+  { id: "citadel-yriel-yellow", name: "Yriel Yellow", brand: "Citadel", type: "Layer", colourFamily: "Yellows & Oranges", description: "Bright warm yellow, slightly more orange than Flash Gitz. Good mid-highlight.", hex: "#E8C800" },
+  { id: "citadel-tau-light-ochre", name: "Tau Light Ochre", brand: "Citadel", type: "Layer", colourFamily: "Yellows & Oranges", description: "Pale golden-yellow. Good for bone and desert highlights.", hex: "#E8C88A" },
+  { id: "citadel-pink-horror", name: "Pink Horror", brand: "Citadel", type: "Layer", colourFamily: "Purples & Pinks", description: "Bright vivid pink. Mid-tone highlight for pink and Slaanesh schemes.", hex: "#D44080" },
+  { id: "citadel-emperor-children", name: "Emperor's Children", brand: "Citadel", type: "Layer", colourFamily: "Purples & Pinks", description: "Bright, vivid magenta-pink. Bright highlight for Slaanesh schemes.", hex: "#E060A0" },
+  { id: "citadel-genestealer-purple", name: "Genestealer Purple", brand: "Citadel", type: "Layer", colourFamily: "Purples & Pinks", description: "Bright mid-tone purple. Good for Tyranid and Slaanesh highlights.", hex: "#6A3A9A" },
+  { id: "citadel-warlord-purple", name: "Warlord Purple", brand: "Citadel", type: "Layer", colourFamily: "Purples & Pinks", description: "Deep, warm purple. Good for purple robes and dark cloth.", hex: "#6B3F7B" },
+  { id: "citadel-slaanesh-grey", name: "Slaanesh Grey", brand: "Citadel", type: "Layer", colourFamily: "Cool Greys", description: "Pale lilac-grey. Elegant highlight for grey or purple-grey schemes.", hex: "#C0B4C8" },
+  { id: "citadel-alaitoc-blue", name: "Alaitoc Blue", brand: "Citadel", type: "Layer", colourFamily: "Blues", description: "Mid-tone bright blue. Good for mid-highlighting blue armour.", hex: "#3A68A8" },
+  { id: "citadel-caledor-sky", name: "Caledor Sky", brand: "Citadel", type: "Layer", colourFamily: "Blues", description: "Bright sky blue. Mid-tone for blue layering and cloth.", hex: "#4A7BA7" },
+  { id: "citadel-lothern-blue", name: "Lothern Blue", brand: "Citadel", type: "Layer", colourFamily: "Blues", description: "Bright, clean blue. Upper mid-highlight for blue schemes.", hex: "#4A9ACC" },
+  { id: "citadel-teclis-blue", name: "Teclis Blue", brand: "Citadel", type: "Layer", colourFamily: "Blues", description: "Bright sky blue-cyan. Great for magical effects and bright blue highlights.", hex: "#5AC5E8" },
+  { id: "citadel-fenrisian-grey", name: "Fenrisian Grey", brand: "Citadel", type: "Layer", colourFamily: "Cool Greys", description: "Cool light grey-blue. Highlight for cold grey tones and Space Wolf armour.", hex: "#8B9DBB" },
+  { id: "citadel-chronus-blue", name: "Chronus Blue", brand: "Citadel", type: "Layer", colourFamily: "Blues", description: "Deep, mid-range blue. Good for darker blue highlights.", hex: "#2A5890" },
+  { id: "citadel-moot-green", name: "Moot Green", brand: "Citadel", type: "Layer", colourFamily: "Greens", description: "Bright lime-green. Great for goblins and bright green detail highlights.", hex: "#7ABF38" },
+  { id: "citadel-straken-green", name: "Straken Green", brand: "Citadel", type: "Layer", colourFamily: "Greens", description: "Bright, military olive green. Good for Catachan and jungle schemes.", hex: "#4A8A30" },
+  { id: "citadel-elysian-green", name: "Elysian Green", brand: "Citadel", type: "Layer", colourFamily: "Greens", description: "Bright mid-tone green. Good for layering greens and vegetation.", hex: "#6B9E4A" },
+  { id: "citadel-ogryn-camo", name: "Ogryn Camo", brand: "Citadel", type: "Layer", colourFamily: "Greens", description: "Muted, warm yellow-green. Good for camouflage and earthy green tones.", hex: "#9AAA5A" },
+  { id: "citadel-orruk-flesh", name: "Orruk Flesh", brand: "Citadel", type: "Layer", colourFamily: "Greens", description: "Mid warm green, slightly brighter than Waaagh! Flesh. For Ork/Orruk skin layering.", hex: "#4A7A3A" },
+  { id: "citadel-skarsnik-green", name: "Skarsnik Green", brand: "Citadel", type: "Layer", colourFamily: "Greens", description: "Bright, lighter green. Highlight for goblins and Ork skin.", hex: "#68A848" },
+  { id: "citadel-skrag-brown", name: "Skrag Brown", brand: "Citadel", type: "Layer", colourFamily: "Browns & Leathers", description: "Mid-tone warm orange-brown. Great for leather and wood highlights.", hex: "#8B6F47" },
+  { id: "citadel-balor-brown", name: "Balor Brown", brand: "Citadel", type: "Layer", colourFamily: "Browns & Leathers", description: "Warm golden-brown. Good for leather and light wood highlights.", hex: "#8B7355" },
+  { id: "citadel-deathclaw-brown", name: "Deathclaw Brown", brand: "Citadel", type: "Layer", colourFamily: "Skin Tones", description: "Warm, orange-brown. Good for dark skin highlights and leather.", hex: "#A86848" },
+  { id: "citadel-wazdakka-red", name: "Wazdakka Red", brand: "Citadel", type: "Layer", colourFamily: "Reds", description: "Warm bright red. Perfect for mid-tone highlights on red armour.", hex: "#C41E2E" },
+  { id: "citadel-sigvald-burgundy", name: "Sigvald Burgundy", brand: "Citadel", type: "Layer", colourFamily: "Reds", description: "Deep wine-red. Elegant for Slaanesh robes and dark red cloth.", hex: "#7A2040" },
+  { id: "citadel-ironbreaker", name: "Ironbreaker", brand: "Citadel", type: "Layer", colourFamily: "Metallics", description: "Bright, shiny silver. Excellent for highlights on silver metallics.", hex: "#C0C0C0" },
+  { id: "citadel-auric-armour-gold", name: "Auric Armour Gold", brand: "Citadel", type: "Layer", colourFamily: "Metallics", description: "Bright, warm gold. Used to highlight gold armour over Balthasar Gold.", hex: "#D4A83A" },
+  { id: "citadel-stormhost-silver", name: "Stormhost Silver", brand: "Citadel", type: "Layer", colourFamily: "Metallics", description: "Very bright, clean silver. Final highlight on silver metallic areas.", hex: "#E0E0E8" },
+  { id: "citadel-runefang-steel", name: "Runefang Steel", brand: "Citadel", type: "Layer", colourFamily: "Metallics", description: "Bright, slightly warm silver. Edge highlight for silver metallic.", hex: "#D0D0D8" },
+  { id: "citadel-canoptek-alloy", name: "Canoptek Alloy", brand: "Citadel", type: "Layer", colourFamily: "Metallics", description: "Cold, bluish-silver metallic. For Necron and sci-fi chrome effects.", hex: "#B8C8D8" },
+  { id: "citadel-hashut-copper", name: "Hashut Copper", brand: "Citadel", type: "Layer", colourFamily: "Metallics", description: "Warm bright copper. Highlight for copper and bronze surfaces.", hex: "#C07840" },
 
-  // Citadel Contrast
-  {
-    id: "citadel-blood-angels-red",
-    name: "Blood Angels Red",
-    brand: "Citadel",
-    type: "Contrast",
-    colourFamily: "Reds",
-    description: "Self-shading red. Creates depth automatically when applied over light base.",
-    hex: "#8B3030"
-  },
-  {
-    id: "citadel-space-wolves-grey",
-    name: "Space Wolves Grey",
-    brand: "Citadel",
-    type: "Contrast",
-    colourFamily: "Cool Greys",
-    description: "Self-shading cool grey with blue tone. Creates dimension instantly.",
-    hex: "#606080"
-  },
-  {
-    id: "citadel-iyanden-yellow",
-    name: "Iyanden Yellow",
-    brand: "Citadel",
-    type: "Contrast",
-    colourFamily: "Yellows & Oranges",
-    description: "Self-shading yellow. Builds depth on bright yellow basecoats.",
-    hex: "#C49A20"
-  },
+  // ─── CITADEL SHADE ───────────────────────────────────────────────────────────
+  { id: "citadel-nuln-oil", name: "Nuln Oil", brand: "Citadel", type: "Shade", colourFamily: "Blacks & Whites", description: "Dark oily black wash. Deepens recesses and adds shadow definition on anything.", hex: "#0A0A0A" },
+  { id: "citadel-agrax-earthshade", name: "Agrax Earthshade", brand: "Citadel", type: "Shade", colourFamily: "Browns & Leathers", description: "Warm murky brown wash. The most versatile shade — excellent for browns, wood, and metals.", hex: "#4A3D2A" },
+  { id: "citadel-reikland-fleshshade", name: "Reikland Fleshshade", brand: "Citadel", type: "Shade", colourFamily: "Skin Tones", description: "Warm pink-brown wash. The go-to shade for all human skin tones.", hex: "#6A3A2A" },
+  { id: "citadel-carroburg-crimson", name: "Carroburg Crimson", brand: "Citadel", type: "Shade", colourFamily: "Reds", description: "Deep red wash. Adds richness and shadow to reds and pinks.", hex: "#4A1010" },
+  { id: "citadel-fuegan-orange", name: "Fuegan Orange", brand: "Citadel", type: "Shade", colourFamily: "Yellows & Oranges", description: "Warm orange-brown wash. Great for shading orange, yellow, and leather tones.", hex: "#7A3A10" },
+  { id: "citadel-seraphim-sepia", name: "Seraphim Sepia", brand: "Citadel", type: "Shade", colourFamily: "Browns & Leathers", description: "Warm golden-brown wash. Perfect for bone, parchment, and sandy tones.", hex: "#5A4A20" },
+  { id: "citadel-drakenhof-nightshade", name: "Drakenhof Nightshade", brand: "Citadel", type: "Shade", colourFamily: "Blues", description: "Dark blue wash. Shades blues and adds cool shadow to white or light grey.", hex: "#1A2A4A" },
+  { id: "citadel-druchii-violet", name: "Druchii Violet", brand: "Citadel", type: "Shade", colourFamily: "Purples & Pinks", description: "Deep purple wash. Great for shadowing purples, pink, and adding mysterious depth.", hex: "#3A1A4A" },
+  { id: "citadel-biel-tan-green", name: "Biel-tan Green", brand: "Citadel", type: "Shade", colourFamily: "Greens", description: "Dark murky green wash. Adds depth to greens and vegetation.", hex: "#1A3A1A" },
+  { id: "citadel-athonian-camoshade", name: "Athonian Camoshade", brand: "Citadel", type: "Shade", colourFamily: "Greens", description: "Murky khaki-green wash. Excellent for camouflage, dirty greens, and weathering.", hex: "#3A4A2A" },
+  { id: "citadel-coelia-greenshade", name: "Coelia Greenshade", brand: "Citadel", type: "Shade", colourFamily: "Greens", description: "Dark teal wash. Great for shading teal, dark elves, and cool greens.", hex: "#1A3A38" },
+  { id: "citadel-guilliman-flesh", name: "Guilliman Flesh", brand: "Citadel", type: "Shade", colourFamily: "Skin Tones", description: "Cool blue-pink wash. Adds cold shadows to pale or space marine skin.", hex: "#4A5A7A" },
 
-  // Citadel Dry
-  {
-    id: "citadel-ryza-rust",
-    name: "Ryza Rust",
-    brand: "Citadel",
-    type: "Dry",
-    colourFamily: "Reds",
-    description: "Bright orange-rust. Dry texture for weathering and rust effects.",
-    hex: "#C87533"
-  },
-  {
-    id: "citadel-tyrant-skull",
-    name: "Tyrant Skull",
-    brand: "Citadel",
-    type: "Dry",
-    colourFamily: "Whites & Creams",
-    description: "Pale bone. Dry texture for bone highlights and chalky effects.",
-    hex: "#E8D4B8"
-  },
-  {
-    id: "citadel-dryad-bark",
-    name: "Dryad Bark",
-    brand: "Citadel",
-    type: "Dry",
-    colourFamily: "Browns & Leathers",
-    description: "Medium-brown texture. Dry application for bark and raised surfaces.",
-    hex: "#6B5344"
-  },
+  // ─── CITADEL CONTRAST ────────────────────────────────────────────────────────
+  { id: "citadel-blood-angels-red", name: "Blood Angels Red", brand: "Citadel", type: "Contrast", colourFamily: "Reds", description: "Self-shading red. Creates depth automatically when applied over light base.", hex: "#8B3030" },
+  { id: "citadel-flesh-tearers-red", name: "Flesh Tearers Red", brand: "Citadel", type: "Contrast", colourFamily: "Reds", description: "Very dark, blood-red Contrast. Creates rich shadowed red with a single coat.", hex: "#6A1A1A" },
+  { id: "citadel-snakebite-leather", name: "Snakebite Leather", brand: "Citadel", type: "Contrast", colourFamily: "Browns & Leathers", description: "Warm tan-orange Contrast. Excellent for leather and brown detail in one coat.", hex: "#9A6A38" },
+  { id: "citadel-gore-grunta-fur", name: "Gore-grunta Fur", brand: "Citadel", type: "Contrast", colourFamily: "Browns & Leathers", description: "Dark warm brown-orange Contrast. Perfect for fur, hide, and leather.", hex: "#7A4A28" },
+  { id: "citadel-wyldwood", name: "Wyldwood", brand: "Citadel", type: "Contrast", colourFamily: "Browns & Leathers", description: "Dark warm brown Contrast. Great for wood, bark, and earth tones.", hex: "#4A3020" },
+  { id: "citadel-skeleton-horde", name: "Skeleton Horde", brand: "Citadel", type: "Contrast", colourFamily: "Whites & Creams", description: "Warm golden-bone Contrast. The fastest way to paint bone and skeletal models.", hex: "#C8A860" },
+  { id: "citadel-aggaros-dunes", name: "Aggaros Dunes", brand: "Citadel", type: "Contrast", colourFamily: "Yellows & Oranges", description: "Warm sandy tan Contrast. Excellent for desert bases and sand-coloured armour.", hex: "#B89A58" },
+  { id: "citadel-nazdreg-yellow", name: "Nazdreg Yellow", brand: "Citadel", type: "Contrast", colourFamily: "Yellows & Oranges", description: "Self-shading bright yellow Contrast. Great for yellow armour and warm tones.", hex: "#D4A820" },
+  { id: "citadel-iyanden-yellow", name: "Iyanden Yellow", brand: "Citadel", type: "Contrast", colourFamily: "Yellows & Oranges", description: "Self-shading yellow. Builds depth on pale yellow basecoats.", hex: "#C49A20" },
+  { id: "citadel-volupus-pink", name: "Volupus Pink", brand: "Citadel", type: "Contrast", colourFamily: "Purples & Pinks", description: "Vivid pink Contrast. Excellent for Slaanesh and bright pink schemes.", hex: "#C03878" },
+  { id: "citadel-magos-purple", name: "Magos Purple", brand: "Citadel", type: "Contrast", colourFamily: "Purples & Pinks", description: "Mid purple Contrast. Good for robes, cloth, and purple armour.", hex: "#5A2870" },
+  { id: "citadel-shyish-purple", name: "Shyish Purple", brand: "Citadel", type: "Contrast", colourFamily: "Purples & Pinks", description: "Deep royal purple Contrast. Perfect for rich shadow purples.", hex: "#3A1A58" },
+  { id: "citadel-ultramarines-blue", name: "Ultramarines Blue", brand: "Citadel", type: "Contrast", colourFamily: "Blues", description: "Classic Ultramarines blue Contrast. Instant blue power armour over Wraithbone.", hex: "#2848A8" },
+  { id: "citadel-talassar-blue", name: "Talassar Blue", brand: "Citadel", type: "Contrast", colourFamily: "Blues", description: "Bright teal-blue Contrast. Great for glowing effects and water.", hex: "#1A78A8" },
+  { id: "citadel-aethermatic-blue", name: "Aethermatic Blue", brand: "Citadel", type: "Contrast", colourFamily: "Blues", description: "Electric bright blue Contrast. Excellent for glowing energy effects.", hex: "#3898C8" },
+  { id: "citadel-leviadon-blue", name: "Leviadon Blue", brand: "Citadel", type: "Contrast", colourFamily: "Blues", description: "Deep dark navy Contrast. Dramatic shadow blue for armour and cloth.", hex: "#0A2848" },
+  { id: "citadel-dark-angels-green", name: "Dark Angels Green", brand: "Citadel", type: "Contrast", colourFamily: "Greens", description: "Very dark forest green Contrast. Instant Dark Angels armour over Wraithbone.", hex: "#1A3A1A" },
+  { id: "citadel-militarum-green", name: "Militarum Green", brand: "Citadel", type: "Contrast", colourFamily: "Greens", description: "Muted olive-green Contrast. Great for military and camouflage effects.", hex: "#3A5A2A" },
+  { id: "citadel-plaguebearer-flesh", name: "Plaguebearer Flesh", brand: "Citadel", type: "Contrast", colourFamily: "Greens", description: "Sickly grey-green Contrast. Perfect for Nurgle and diseased creature skin.", hex: "#708058" },
+  { id: "citadel-warp-lightning", name: "Warp Lightning", brand: "Citadel", type: "Contrast", colourFamily: "Greens", description: "Bright electric lime-green Contrast. For Warp energy effects and neon green.", hex: "#60C030" },
+  { id: "citadel-space-wolves-grey", name: "Space Wolves Grey", brand: "Citadel", type: "Contrast", colourFamily: "Cool Greys", description: "Self-shading cool blue-grey Contrast. Creates instant dimension on grey armour.", hex: "#606080" },
+  { id: "citadel-basilicanum-grey", name: "Basilicanum Grey", brand: "Citadel", type: "Contrast", colourFamily: "Cool Greys", description: "Dark grey Contrast. Good for weathering and dark grey armour in one coat.", hex: "#3A3A42" },
+  { id: "citadel-black-templar", name: "Black Templar", brand: "Citadel", type: "Contrast", colourFamily: "Blacks & Whites", description: "Very dark, near-black Contrast with depth. For Black Templars and dark armour.", hex: "#1A1A22" },
+  { id: "citadel-apothecary-white", name: "Apothecary White", brand: "Citadel", type: "Contrast", colourFamily: "Whites & Creams", description: "Off-white Contrast with subtle blue shadow. Perfect for white armour and cloth.", hex: "#D8E0E8" },
+  { id: "citadel-darkoath-flesh", name: "Darkoath Flesh", brand: "Citadel", type: "Contrast", colourFamily: "Skin Tones", description: "Warm mid-tone skin Contrast. Fast, natural-looking skin in one coat.", hex: "#B07858" },
 
-  // Citadel Technical
-  {
-    id: "citadel-nihilakh-oxide",
-    name: "Nihilakh Oxide",
-    brand: "Citadel",
-    type: "Technical",
-    colourFamily: "Cool Greys",
-    description: "Bright cyan-green technical. Creates verdigris and oxidation effects on copper/bronze.",
-    hex: "#4CBDBF"
-  },
-  {
-    id: "citadel-typhus-corrosion",
-    name: "Typhus Corrosion",
-    brand: "Citadel",
-    type: "Technical",
-    colourFamily: "Greens",
-    description: "Murky green-brown technical. Creates corrosion and decay effects.",
-    hex: "#5A6B4F"
-  },
+  // ─── CITADEL DRY ─────────────────────────────────────────────────────────────
+  { id: "citadel-ryza-rust", name: "Ryza Rust", brand: "Citadel", type: "Dry", colourFamily: "Reds", description: "Bright orange-rust dry. Adds rust and weathering effects to metal surfaces.", hex: "#C87533" },
+  { id: "citadel-tyrant-skull", name: "Tyrant Skull", brand: "Citadel", type: "Dry", colourFamily: "Whites & Creams", description: "Pale bone dry. For bone highlights, chalky effects, and dusty stone.", hex: "#E8D4B8" },
+  { id: "citadel-terminatus-stone", name: "Terminatus Stone", brand: "Citadel", type: "Dry", colourFamily: "Warm Greys", description: "Medium warm stone grey dry. Excellent for stone, rubble, and dusty armour.", hex: "#C0B090" },
+  { id: "citadel-longbeard-grey", name: "Longbeard Grey", brand: "Citadel", type: "Dry", colourFamily: "Cool Greys", description: "Light warm grey dry. Good for grey fur, stone highlights, and aged surfaces.", hex: "#C8C4B8" },
+  { id: "citadel-necron-compound", name: "Necron Compound", brand: "Citadel", type: "Dry", colourFamily: "Metallics", description: "Bright silver dry. Fast, realistic metallic edge highlights on weapons and armour.", hex: "#D0D8DC" },
+  { id: "citadel-praxeti-white-dry", name: "Praxeti White", brand: "Citadel", type: "Dry", colourFamily: "Blacks & Whites", description: "Bright near-white dry. Final highlight on white or very light models.", hex: "#F0F0F0" },
+  { id: "citadel-dryad-bark", name: "Dryad Bark", brand: "Citadel", type: "Dry", colourFamily: "Browns & Leathers", description: "Medium brown dry. For bark, wood, and raised surface drybrushing.", hex: "#6B5344" },
+  { id: "citadel-eldar-flesh", name: "Eldar Flesh", brand: "Citadel", type: "Dry", colourFamily: "Skin Tones", description: "Pale peachy dry. Quick highlight for skin and light flesh tones.", hex: "#E0B898" },
 
-  // Vallejo Model Colour
-  {
-    id: "vallejo-model-german-grey",
-    name: "German Grey",
-    brand: "Vallejo Model Colour",
-    type: "Base",
-    colourFamily: "Cool Greys",
-    description: "Medium cool grey with slight blue undertone. Historic military colour.",
-    hex: "#708090"
-  },
-  {
-    id: "vallejo-model-intermediate-blue",
-    name: "Intermediate Blue",
-    brand: "Vallejo Model Colour",
-    type: "Base",
-    colourFamily: "Blues",
-    description: "Soft, medium blue. Perfect for faded uniforms and sky.",
-    hex: "#5A6FA6"
-  },
-  {
-    id: "vallejo-model-leather-brown",
-    name: "Leather Brown",
-    brand: "Vallejo Model Colour",
-    type: "Base",
-    colourFamily: "Browns & Leathers",
-    description: "Warm, rich brown. Excellent for leather kit and equipment.",
-    hex: "#6B4F2F"
-  },
-  {
-    id: "vallejo-model-gunmetal-grey",
-    name: "Gunmetal Grey",
-    brand: "Vallejo Model Colour",
-    type: "Base",
-    colourFamily: "Metallics",
-    description: "Cool, dark silver-grey metallic. Good for realistic gun barrels.",
-    hex: "#4A4A52"
-  },
-  {
-    id: "vallejo-model-burnt-umber",
-    name: "Burnt Umber",
-    brand: "Vallejo Model Colour",
-    type: "Base",
-    colourFamily: "Browns & Leathers",
-    description: "Deep, warm reddish-brown. Great for rich leather and dark earth.",
-    hex: "#5A3D2A"
-  },
-  {
-    id: "vallejo-model-ivory",
-    name: "Ivory",
-    brand: "Vallejo Model Colour",
-    type: "Base",
-    colourFamily: "Whites & Creams",
-    description: "Warm cream-white. Perfect for light cloth and aged bone.",
-    hex: "#F5F1E8"
-  },
-  {
-    id: "vallejo-model-red-oxide",
-    name: "Red Oxide",
-    brand: "Vallejo Model Colour",
-    type: "Base",
-    colourFamily: "Reds",
-    description: "Deep brick-red. Excellent for rust and aged red paint.",
-    hex: "#8B4513"
-  },
-  {
-    id: "vallejo-model-dark-green",
-    name: "Dark Green",
-    brand: "Vallejo Model Colour",
-    type: "Base",
-    colourFamily: "Greens",
-    description: "Deep military-style dark green. Good for camouflage and vegetation.",
-    hex: "#3A5A3A"
-  },
+  // ─── CITADEL TECHNICAL ───────────────────────────────────────────────────────
+  { id: "citadel-nihilakh-oxide", name: "Nihilakh Oxide", brand: "Citadel", type: "Technical", colourFamily: "Greens", description: "Bright cyan-green. Creates verdigris and oxidation effects on copper and bronze.", hex: "#4CBDBF" },
+  { id: "citadel-typhus-corrosion", name: "Typhus Corrosion", brand: "Citadel", type: "Technical", colourFamily: "Greens", description: "Murky green-brown. Creates corrosion, decay, and dirty weathering effects.", hex: "#5A6B4F" },
+  { id: "citadel-blood-for-the-blood-god", name: "Blood for the Blood God", brand: "Citadel", type: "Technical", colourFamily: "Reds", description: "Bright glossy red with red glitter. Creates realistic, wet-looking blood effects.", hex: "#8B0000" },
+  { id: "citadel-nurgles-rot", name: "Nurgle's Rot", brand: "Citadel", type: "Technical", colourFamily: "Greens", description: "Sickly translucent yellow-green. Creates slime, bile, and putrid Nurgle effects.", hex: "#7A9A30" },
+  { id: "citadel-astrogranite", name: "Astrogranite", brand: "Citadel", type: "Technical", colourFamily: "Cool Greys", description: "Dark grey stone texture. Applied thick to bases to create granite and rubble.", hex: "#4A5058" },
+  { id: "citadel-stirland-mud", name: "Stirland Mud", brand: "Citadel", type: "Technical", colourFamily: "Browns & Leathers", description: "Gritty brown mud texture. Applied to bases for realistic muddy ground.", hex: "#6A5030" },
+  { id: "citadel-agrellan-earth", name: "Agrellan Earth", brand: "Citadel", type: "Technical", colourFamily: "Browns & Leathers", description: "Pale dry earth texture. Creates cracked, arid ground on bases.", hex: "#A09070" },
+  { id: "citadel-martian-ironearth", name: "Martian Ironearth", brand: "Citadel", type: "Technical", colourFamily: "Reds", description: "Reddish-terracotta texture. Creates Martian desert and alien world bases.", hex: "#8A4030" },
 
-  // Vallejo Game Colour
-  {
-    id: "vallejo-game-blood-red",
-    name: "Blood Red",
-    brand: "Vallejo Game Colour",
-    type: "Base",
-    colourFamily: "Reds",
-    description: "Deep, warm crimson red. Perfect for blood effects and dark reds.",
-    hex: "#8B2E2E"
-  },
-  {
-    id: "vallejo-game-skin-tone-base",
-    name: "Skin Tone Base",
-    brand: "Vallejo Game Colour",
-    type: "Base",
-    colourFamily: "Skin Tones",
-    description: "Warm, tan-peachy base for human skin tones.",
-    hex: "#D4956F"
-  },
-  {
-    id: "vallejo-game-dark-elf-skin",
-    name: "Dark Elf Skin",
-    brand: "Vallejo Game Colour",
-    type: "Base",
-    colourFamily: "Skin Tones",
-    description: "Cool, purple-grey skin tone. Perfect for dark elves and aliens.",
-    hex: "#7A6B82"
-  },
-  {
-    id: "vallejo-game-verdigris",
-    name: "Verdigris",
-    brand: "Vallejo Game Colour",
-    type: "Base",
-    colourFamily: "Cool Greys",
-    description: "Bright cyan-green. Great for copper oxide and aged brass effects.",
-    hex: "#5DBDBF"
-  },
-  {
-    id: "vallejo-game-dark-sand",
-    name: "Dark Sand",
-    brand: "Vallejo Game Colour",
-    type: "Base",
-    colourFamily: "Yellows & Oranges",
-    description: "Warm, tan-brown. Good for desert, sand, and aged leather.",
-    hex: "#8B8356"
-  },
-  {
-    id: "vallejo-game-dwarf-beard",
-    name: "Dwarf Beard",
-    brand: "Vallejo Game Colour",
-    type: "Base",
-    colourFamily: "Cool Greys",
-    description: "Medium cool grey-brown. Traditional dwarf beard colour.",
-    hex: "#8A8A8A"
-  },
-  {
-    id: "vallejo-game-magic-blue",
-    name: "Magic Blue",
-    brand: "Vallejo Game Colour",
-    type: "Base",
-    colourFamily: "Blues",
-    description: "Vibrant, magical blue with slight purple. For wizard robes and arcane effects.",
-    hex: "#4A5A8B"
-  },
-  {
-    id: "vallejo-game-jade-green",
-    name: "Jade Green",
-    brand: "Vallejo Game Colour",
-    type: "Base",
-    colourFamily: "Greens",
-    description: "Cool, pale greenish-grey. Elegant colour for elves and mystical creatures.",
-    hex: "#7BA695"
-  },
+  // ─── CITADEL PRIMER/AIR ──────────────────────────────────────────────────────
+  { id: "citadel-chaos-black-primer", name: "Chaos Black", brand: "Citadel", type: "Primer", colourFamily: "Blacks & Whites", description: "Black primer. The standard dark undercoat for most Warhammer models.", hex: "#1A1A1A" },
+  { id: "citadel-grey-seer", name: "Grey Seer", brand: "Citadel", type: "Primer", colourFamily: "Cool Greys", description: "Light grey primer. Excellent undercoat for Contrast paints and lighter schemes.", hex: "#C8CCCC" },
 
-  // Army Painter
-  {
-    id: "army-painter-dragon-red",
-    name: "Dragon Red",
-    brand: "Army Painter",
-    type: "Base",
-    colourFamily: "Reds",
-    description: "Bright, warm red with good coverage. Perfect for bold red details.",
-    hex: "#D41E2E"
-  },
-  {
-    id: "army-painter-dark-sea-blue",
-    name: "Dark Sea Blue",
-    brand: "Army Painter",
-    type: "Base",
-    colourFamily: "Blues",
-    description: "Deep, ocean-like blue. Good for dark blue armour and cloth.",
-    hex: "#1A3A52"
-  },
-  {
-    id: "army-painter-necrotic-flesh",
-    name: "Necrotic Flesh",
-    brand: "Army Painter",
-    type: "Base",
-    colourFamily: "Skin Tones",
-    description: "Pale, sickly greenish-white. Perfect for undead and zombie skin.",
-    hex: "#C8D4B0"
-  },
-  {
-    id: "army-painter-monster-brown",
-    name: "Monster Brown",
-    brand: "Army Painter",
-    type: "Base",
-    colourFamily: "Browns & Leathers",
-    description: "Medium, earthy brown. Great for monster hide and organic surfaces.",
-    hex: "#7B5E3F"
-  },
-  {
-    id: "army-painter-orc-blood",
-    name: "Orc Blood",
-    brand: "Army Painter",
-    type: "Base",
-    colourFamily: "Greens",
-    description: "Muddy yellow-green. Authentic ork skin tone.",
-    hex: "#7A8B4A"
-  },
-  {
-    id: "army-painter-elven-green",
-    name: "Elven Green",
-    brand: "Army Painter",
-    type: "Base",
-    colourFamily: "Greens",
-    description: "Pale, silvery green. Ethereal colour for elven cloth and armour.",
-    hex: "#A8C490"
-  },
-  {
-    id: "army-painter-midnight-blue",
-    name: "Midnight Blue",
-    brand: "Army Painter",
-    type: "Base",
-    colourFamily: "Blues",
-    description: "Very dark blue, almost black. Good for night sky and deep shadows.",
-    hex: "#0A1A3A"
-  },
-  {
-    id: "army-painter-metallic-gold",
-    name: "Metallic Gold",
-    brand: "Army Painter",
-    type: "Base",
-    colourFamily: "Metallics",
-    description: "Warm, lustrous gold. Base for golden treasure and ornaments.",
-    hex: "#D4A574"
-  },
-  {
-    id: "army-painter-gun-metal",
-    name: "Gun Metal",
-    brand: "Army Painter",
-    type: "Base",
-    colourFamily: "Metallics",
-    description: "Cool, dull grey metallic. Realistic for weapons and armour.",
-    hex: "#6B7280"
-  },
-  {
-    id: "army-painter-bright-bronze",
-    name: "Bright Bronze",
-    brand: "Army Painter",
-    type: "Base",
-    colourFamily: "Metallics",
-    description: "Warm, reddish-brown metallic. Good for bronze weapons and armour.",
-    hex: "#9B7B52"
-  },
+  // ─── VALLEJO MODEL COLOUR ────────────────────────────────────────────────────
+  { id: "vallejo-model-german-grey", name: "German Grey", brand: "Vallejo Model Colour", type: "Base", colourFamily: "Cool Greys", description: "Medium cool grey with a slight blue undertone. Classic historic military colour.", hex: "#708090" },
+  { id: "vallejo-model-intermediate-blue", name: "Intermediate Blue", brand: "Vallejo Model Colour", type: "Base", colourFamily: "Blues", description: "Soft medium blue. Perfect for faded uniforms and sky painting.", hex: "#5A6FA6" },
+  { id: "vallejo-model-leather-brown", name: "Leather Brown", brand: "Vallejo Model Colour", type: "Base", colourFamily: "Browns & Leathers", description: "Warm rich brown. Excellent for leather kit and equipment.", hex: "#6B4F2F" },
+  { id: "vallejo-model-gunmetal-grey", name: "Gunmetal Grey", brand: "Vallejo Model Colour", type: "Base", colourFamily: "Metallics", description: "Cool dark silver-grey metallic. Good for realistic gun barrels and machinery.", hex: "#4A4A52" },
+  { id: "vallejo-model-burnt-umber", name: "Burnt Umber", brand: "Vallejo Model Colour", type: "Base", colourFamily: "Browns & Leathers", description: "Deep warm reddish-brown. Great for rich leather and dark earth tones.", hex: "#5A3D2A" },
+  { id: "vallejo-model-ivory", name: "Ivory", brand: "Vallejo Model Colour", type: "Base", colourFamily: "Whites & Creams", description: "Warm cream-white. Perfect for light cloth and aged bone.", hex: "#F5F1E8" },
+  { id: "vallejo-model-red-oxide", name: "Red Oxide", brand: "Vallejo Model Colour", type: "Base", colourFamily: "Reds", description: "Deep brick-red. Excellent for rust undercoats and aged red paint.", hex: "#8B4513" },
+  { id: "vallejo-model-dark-green", name: "Dark Green", brand: "Vallejo Model Colour", type: "Base", colourFamily: "Greens", description: "Deep military-style dark green. Good for camouflage and vegetation.", hex: "#3A5A3A" },
+  { id: "vallejo-model-flat-black", name: "Flat Black", brand: "Vallejo Model Colour", type: "Base", colourFamily: "Blacks & Whites", description: "Dead flat black with no sheen. Ideal for deep shadow areas and final touch-ups.", hex: "#1A1A1A" },
+  { id: "vallejo-model-flat-white", name: "Flat White", brand: "Vallejo Model Colour", type: "Base", colourFamily: "Blacks & Whites", description: "Pure flat white. Ideal for final highlights and stark white areas.", hex: "#FFFFFF" },
+  { id: "vallejo-model-sky-grey", name: "Sky Grey", brand: "Vallejo Model Colour", type: "Base", colourFamily: "Cool Greys", description: "Very pale blue-grey. Good for aircraft undersides and pale sky tones.", hex: "#C8D4DC" },
+  { id: "vallejo-model-olive-green", name: "Olive Green", brand: "Vallejo Model Colour", type: "Base", colourFamily: "Greens", description: "Classic olive-green. Perfect for military uniforms and vehicles.", hex: "#6B7A42" },
+  { id: "vallejo-model-dark-rust", name: "Dark Rust", brand: "Vallejo Model Colour", type: "Base", colourFamily: "Reds", description: "Dark, warm orange-brown. Base layer for weathering and rust effects.", hex: "#8B4020" },
+  { id: "vallejo-model-medium-fleshtone", name: "Medium Fleshtone", brand: "Vallejo Model Colour", type: "Base", colourFamily: "Skin Tones", description: "Natural, warm mid-tone skin. Good base for a wide range of human skin tones.", hex: "#C8884A" },
+  { id: "vallejo-model-pale-flesh", name: "Pale Flesh", brand: "Vallejo Model Colour", type: "Base", colourFamily: "Skin Tones", description: "Light, warm peachy skin. Highlight or base for pale European skin tones.", hex: "#E8BCA0" },
+  { id: "vallejo-model-dark-flesh", name: "Dark Flesh", brand: "Vallejo Model Colour", type: "Base", colourFamily: "Skin Tones", description: "Deep warm brown skin. Good base for darker skin tones.", hex: "#8A5030" },
+  { id: "vallejo-model-gold", name: "Gold", brand: "Vallejo Model Colour", type: "Base", colourFamily: "Metallics", description: "Warm, bright gold metallic. Clean gold for decoration and trim.", hex: "#D4A040" },
+  { id: "vallejo-model-silver", name: "Silver", brand: "Vallejo Model Colour", type: "Base", colourFamily: "Metallics", description: "Bright neutral silver metallic. Clean coverage for blades and armour.", hex: "#C8C8D0" },
+  { id: "vallejo-model-copper", name: "Copper", brand: "Vallejo Model Colour", type: "Base", colourFamily: "Metallics", description: "Warm reddish-brown metallic. Realistic copper for pipes and ancient metal.", hex: "#B87333" },
+  { id: "vallejo-model-prussian-blue", name: "Prussian Blue", brand: "Vallejo Model Colour", type: "Base", colourFamily: "Blues", description: "Deep dark blue with cold tone. Classic historical military colour.", hex: "#0E2B4A" },
+  { id: "vallejo-model-royal-purple", name: "Royal Purple", brand: "Vallejo Model Colour", type: "Base", colourFamily: "Purples & Pinks", description: "Rich mid-tone purple. Excellent for fantasy robes and Slaanesh details.", hex: "#5A2880" },
+  { id: "vallejo-model-flat-earth", name: "Flat Earth", brand: "Vallejo Model Colour", type: "Base", colourFamily: "Browns & Leathers", description: "Warm, flat mid-brown. Good for earth tones, bases, and terrain.", hex: "#8A6A40" },
+  { id: "vallejo-model-deck-tan", name: "Deck Tan", brand: "Vallejo Model Colour", type: "Base", colourFamily: "Yellows & Oranges", description: "Warm pale tan-cream. Perfect for light wood, canvas, and desert vehicles.", hex: "#D8C898" },
+  { id: "vallejo-model-stone-grey", name: "Stone Grey", brand: "Vallejo Model Colour", type: "Base", colourFamily: "Warm Greys", description: "Pale warm grey. Good for stone, concrete, and dusty surfaces.", hex: "#C0B8A8" },
+  { id: "vallejo-model-green-ochre", name: "Green Ochre", brand: "Vallejo Model Colour", type: "Base", colourFamily: "Yellows & Oranges", description: "Muted yellow-green. Good for dried vegetation, sand, and weathered surfaces.", hex: "#A8A040" },
 
-  // AK Interactive
-  {
-    id: "ak-russian-brown",
-    name: "Russian Brown",
-    brand: "AK Interactive",
-    type: "Base",
-    colourFamily: "Browns & Leathers",
-    description: "Deep brown with slight red undertone. Historic military colour.",
-    hex: "#6B4F3A"
-  },
-  {
-    id: "ak-field-drab",
-    name: "Field Drab",
-    brand: "AK Interactive",
-    type: "Base",
-    colourFamily: "Greens",
-    description: "Muted, warm olive-green. Perfect for field uniforms and camouflage.",
-    hex: "#6B7A52"
-  },
-  {
-    id: "ak-splinter-camouflage",
-    name: "Splinter Camouflage",
-    brand: "AK Interactive",
-    type: "Base",
-    colourFamily: "Cool Greys",
-    description: "Cool, pale grey. Used in modern digital camouflage patterns.",
-    hex: "#9AB0B8"
-  },
-  {
-    id: "ak-insignia-yellow",
-    name: "Insignia Yellow",
-    brand: "AK Interactive",
-    type: "Base",
-    colourFamily: "Yellows & Oranges",
-    description: "Bright, punchy yellow. Good for aircraft markings and bold details.",
-    hex: "#FFD700"
-  },
-  {
-    id: "ak-steel",
-    name: "Steel",
-    brand: "AK Interactive",
-    type: "Base",
-    colourFamily: "Metallics",
-    description: "Bright metallic silver with realistic sheen. Industrial metal base.",
-    hex: "#C8C8D0"
-  },
-  {
-    id: "ak-copper",
-    name: "Copper",
-    brand: "AK Interactive",
-    type: "Base",
-    colourFamily: "Metallics",
-    description: "Warm, reddish-brown metallic. For copper details and ancient metal.",
-    hex: "#B87333"
-  },
-  {
-    id: "ak-track-color",
-    name: "Track Colour",
-    brand: "AK Interactive",
-    type: "Base",
-    colourFamily: "Blacks & Whites",
-    description: "Very dark, weathered grey-black. For tank tracks and worn metal.",
-    hex: "#3A3A42"
-  },
-  {
-    id: "ak-dark-sea-blue",
-    name: "Dark Sea Blue",
-    brand: "AK Interactive",
-    type: "Base",
-    colourFamily: "Blues",
-    description: "Deep navy-blue. Naval colour for ships and modern military.",
-    hex: "#1A2F52"
-  },
-  {
-    id: "ak-uniform-grey",
-    name: "Uniform Grey",
-    brand: "AK Interactive",
-    type: "Base",
-    colourFamily: "Cool Greys",
-    description: "Medium neutral grey. Historic military uniform basecoat.",
-    hex: "#7A8A9A"
-  },
-  {
-    id: "ak-tank-grey",
-    name: "Tank Grey",
-    brand: "AK Interactive",
-    type: "Base",
-    colourFamily: "Warm Greys",
-    description: "Slightly warm, medium grey. Realistic for tank bodywork.",
-    hex: "#8B8B8B"
-  },
+  // ─── VALLEJO GAME COLOUR ─────────────────────────────────────────────────────
+  { id: "vallejo-game-blood-red", name: "Blood Red", brand: "Vallejo Game Colour", type: "Base", colourFamily: "Reds", description: "Deep warm crimson red. Perfect for blood effects and vibrant red armour.", hex: "#8B2E2E" },
+  { id: "vallejo-game-skin-tone", name: "Skin Tone", brand: "Vallejo Game Colour", type: "Base", colourFamily: "Skin Tones", description: "Warm tan-peachy base for human skin tones.", hex: "#D4956F" },
+  { id: "vallejo-game-dark-elf-skin", name: "Dark Elf Skin", brand: "Vallejo Game Colour", type: "Base", colourFamily: "Skin Tones", description: "Cool purple-grey skin tone. Perfect for dark elves and alien models.", hex: "#7A6B82" },
+  { id: "vallejo-game-goblin-green", name: "Goblin Green", brand: "Vallejo Game Colour", type: "Base", colourFamily: "Greens", description: "Classic bright goblin green. Iconic for ork and goblin skin.", hex: "#5A9A30" },
+  { id: "vallejo-game-dark-sand", name: "Dark Sand", brand: "Vallejo Game Colour", type: "Base", colourFamily: "Yellows & Oranges", description: "Warm tan-brown. Good for desert, sand, and aged leather.", hex: "#8B8356" },
+  { id: "vallejo-game-magic-blue", name: "Magic Blue", brand: "Vallejo Game Colour", type: "Base", colourFamily: "Blues", description: "Vibrant magical blue with a slight purple. For wizard robes and arcane effects.", hex: "#4A5A8B" },
+  { id: "vallejo-game-jade-green", name: "Jade Green", brand: "Vallejo Game Colour", type: "Base", colourFamily: "Greens", description: "Cool pale green-grey. Elegant for elves and mystical creatures.", hex: "#7BA695" },
+  { id: "vallejo-game-chaos-black", name: "Chaos Black", brand: "Vallejo Game Colour", type: "Base", colourFamily: "Blacks & Whites", description: "Dense flat black. Strong coverage for dark basecoats.", hex: "#1A1A1A" },
+  { id: "vallejo-game-dead-white", name: "Dead White", brand: "Vallejo Game Colour", type: "Base", colourFamily: "Blacks & Whites", description: "Pure flat white. Good coverage for white areas and final highlights.", hex: "#FFFFFF" },
+  { id: "vallejo-game-beasty-brown", name: "Beasty Brown", brand: "Vallejo Game Colour", type: "Base", colourFamily: "Browns & Leathers", description: "Warm earthy mid-brown. Versatile for leather, fur, and organic surfaces.", hex: "#7A5030" },
+  { id: "vallejo-game-bone-white", name: "Bone White", brand: "Vallejo Game Colour", type: "Base", colourFamily: "Whites & Creams", description: "Warm off-white. Perfect for bone, ivory, and old cloth.", hex: "#E8DEC8" },
+  { id: "vallejo-game-wolf-grey", name: "Wolf Grey", brand: "Vallejo Game Colour", type: "Base", colourFamily: "Cool Greys", description: "Medium cool blue-grey. Good for fur, cold tones, and wolf or wolf-like creatures.", hex: "#808898" },
+  { id: "vallejo-game-plague-brown", name: "Plague Brown", brand: "Vallejo Game Colour", type: "Base", colourFamily: "Browns & Leathers", description: "Dark sickly brown-green. Perfect for plague, decay, and diseased surfaces.", hex: "#5A6B4A" },
+  { id: "vallejo-game-scrofulous-brown", name: "Scrofulous Brown", brand: "Vallejo Game Colour", type: "Base", colourFamily: "Browns & Leathers", description: "Mid warm ochre-brown. Good for desert creatures and warm leather highlights.", hex: "#A88050" },
+  { id: "vallejo-game-earth", name: "Earth", brand: "Vallejo Game Colour", type: "Base", colourFamily: "Browns & Leathers", description: "Dark warm brown, good for basing and earthy terrain.", hex: "#6A4828" },
+  { id: "vallejo-game-verdigris", name: "Verdigris", brand: "Vallejo Game Colour", type: "Base", colourFamily: "Greens", description: "Bright cyan-green. For copper oxide and aged brass effects.", hex: "#5DBDBF" },
+  { id: "vallejo-game-moonstone", name: "Moonstone", brand: "Vallejo Game Colour", type: "Base", colourFamily: "Cool Greys", description: "Cool silvery-white. Ethereal colour for magical effects and bright highlights.", hex: "#D0D8E0" },
+  { id: "vallejo-game-bloody-red", name: "Bloody Red", brand: "Vallejo Game Colour", type: "Base", colourFamily: "Reds", description: "Bright vivid red. Punchy colour for bold red areas.", hex: "#C02020" },
+  { id: "vallejo-game-ultramarine-blue", name: "Ultramarine Blue", brand: "Vallejo Game Colour", type: "Base", colourFamily: "Blues", description: "Rich deep blue. Classic colour for blue power armour and robes.", hex: "#2040A0" },
 
-  // Additional specialty paints
-  {
-    id: "citadel-chaos-black",
-    name: "Chaos Black",
-    brand: "Citadel",
-    type: "Primer",
-    colourFamily: "Blacks & Whites",
-    description: "Black primer spray. Foundation for dark miniatures.",
-    hex: "#1A1A1A"
-  },
-  {
-    id: "citadel-white-scar",
-    name: "White Scar",
-    brand: "Citadel",
-    type: "Base",
-    colourFamily: "Whites & Creams",
-    description: "Pure, bright white. Good for snow, bone highlights, and bright cloth.",
-    hex: "#FFFFFF"
-  },
-  {
-    id: "vallejo-game-moonstone",
-    name: "Moonstone",
-    brand: "Vallejo Game Colour",
-    type: "Base",
-    colourFamily: "Cool Greys",
-    description: "Cool, silvery-white. Ethereal colour for magical effects.",
-    hex: "#D0D8E0"
-  },
-  {
-    id: "army-painter-plate-mail",
-    name: "Plate Mail",
-    brand: "Army Painter",
-    type: "Base",
-    colourFamily: "Metallics",
-    description: "Dull grey metallic. Classic armoured knight colour.",
-    hex: "#7B8B9B"
-  },
-  {
-    id: "citadel-moot-green",
-    name: "Moot Green",
-    brand: "Citadel",
-    type: "Layer",
-    colourFamily: "Greens",
-    description: "Bright lime-green. Great for bright green details and goblins.",
-    hex: "#7ABF38"
-  },
-  {
-    id: "citadel-yriel-yellow",
-    name: "Yriel Yellow",
-    brand: "Citadel",
-    type: "Layer",
-    colourFamily: "Yellows & Oranges",
-    description: "Bright, warm yellow. Perfect for warm yellow layering and highlights.",
-    hex: "#E8C800"
-  },
-  {
-    id: "citadel-teclis-blue",
-    name: "Teclis Blue",
-    brand: "Citadel",
-    type: "Layer",
-    colourFamily: "Blues",
-    description: "Bright sky blue-cyan. Great for magical effects and bright blues.",
-    hex: "#5AC5E8"
-  },
-  {
-    id: "vallejo-game-plague-brown",
-    name: "Plague Brown",
-    brand: "Vallejo Game Colour",
-    type: "Base",
-    colourFamily: "Browns & Leathers",
-    description: "Dark, sickly brown-green. Perfect for plague, decay, and disease.",
-    hex: "#5A6B4A"
-  },
-  {
-    id: "citadel-balor-brown",
-    name: "Balor Brown",
-    brand: "Citadel",
-    type: "Layer",
-    colourFamily: "Browns & Leathers",
-    description: "Warm, golden-brown. Good for leather and wood highlights.",
-    hex: "#8B7355"
-  },
-  {
-    id: "army-painter-leather-brown",
-    name: "Leather Brown",
-    brand: "Army Painter",
-    type: "Base",
-    colourFamily: "Browns & Leathers",
-    description: "Rich, warm leather brown. Perfect for straps and brown equipment.",
-    hex: "#6B4F33"
-  }
+  // ─── ARMY PAINTER ────────────────────────────────────────────────────────────
+  { id: "army-painter-dragon-red", name: "Dragon Red", brand: "Army Painter", type: "Base", colourFamily: "Reds", description: "Bright warm red with good coverage. Perfect for bold red armour.", hex: "#D41E2E" },
+  { id: "army-painter-pure-red", name: "Pure Red", brand: "Army Painter", type: "Base", colourFamily: "Reds", description: "Clean bright red. Straightforward vibrant red for any red scheme.", hex: "#D42020" },
+  { id: "army-painter-dark-sea-blue", name: "Dark Sea Blue", brand: "Army Painter", type: "Base", colourFamily: "Blues", description: "Deep ocean-like blue. Good for dark blue armour and cloth.", hex: "#1A3A52" },
+  { id: "army-painter-ultramarine-blue", name: "Ultramarine Blue", brand: "Army Painter", type: "Base", colourFamily: "Blues", description: "Classic rich blue. Good alternative to Citadel for blue power armour.", hex: "#2038A0" },
+  { id: "army-painter-wolf-grey", name: "Wolf Grey", brand: "Army Painter", type: "Base", colourFamily: "Cool Greys", description: "Light cool blue-grey. For Space Wolf type armour and cold grey tones.", hex: "#7A8AA0" },
+  { id: "army-painter-necrotic-flesh", name: "Necrotic Flesh", brand: "Army Painter", type: "Base", colourFamily: "Skin Tones", description: "Pale sickly greenish-white. Perfect for undead and zombie skin.", hex: "#C8D4B0" },
+  { id: "army-painter-monster-brown", name: "Monster Brown", brand: "Army Painter", type: "Base", colourFamily: "Browns & Leathers", description: "Medium earthy brown. Great for monster hide and organic surfaces.", hex: "#7B5E3F" },
+  { id: "army-painter-leather-brown", name: "Leather Brown", brand: "Army Painter", type: "Base", colourFamily: "Browns & Leathers", description: "Rich warm leather brown. Perfect for straps and brown equipment.", hex: "#6B4F33" },
+  { id: "army-painter-orc-blood", name: "Orc Blood", brand: "Army Painter", type: "Base", colourFamily: "Greens", description: "Muddy yellow-green. An authentic Ork skin tone.", hex: "#7A8B4A" },
+  { id: "army-painter-goblin-green", name: "Goblin Green", brand: "Army Painter", type: "Base", colourFamily: "Greens", description: "Bright classic green. Good for goblin skin and vivid green detail.", hex: "#4A9A30" },
+  { id: "army-painter-elven-green", name: "Elven Green", brand: "Army Painter", type: "Base", colourFamily: "Greens", description: "Pale silvery green. Ethereal colour for elven cloth and armour.", hex: "#A8C490" },
+  { id: "army-painter-jungle-green", name: "Jungle Green", brand: "Army Painter", type: "Base", colourFamily: "Greens", description: "Vivid tropical green. Bold colour for exotic creatures and vegetation.", hex: "#38A038" },
+  { id: "army-painter-midnight-blue", name: "Midnight Blue", brand: "Army Painter", type: "Base", colourFamily: "Blues", description: "Very dark blue, almost black. Good for night sky and deep shadows.", hex: "#0A1A3A" },
+  { id: "army-painter-dungeon-grey", name: "Dungeon Grey", brand: "Army Painter", type: "Base", colourFamily: "Cool Greys", description: "Medium neutral grey. Good for stone, armour, and dungeon scenery.", hex: "#6A7278" },
+  { id: "army-painter-ash-grey", name: "Ash Grey", brand: "Army Painter", type: "Base", colourFamily: "Cool Greys", description: "Light, slightly warm grey. Good for stone highlights and pale cloth.", hex: "#B0B8B8" },
+  { id: "army-painter-metallic-gold", name: "Metallic Gold", brand: "Army Painter", type: "Base", colourFamily: "Metallics", description: "Warm lustrous gold. Base for golden treasure and ornaments.", hex: "#D4A574" },
+  { id: "army-painter-gun-metal", name: "Gun Metal", brand: "Army Painter", type: "Base", colourFamily: "Metallics", description: "Cool dull grey metallic. Realistic for weapons and armour.", hex: "#6B7280" },
+  { id: "army-painter-bright-bronze", name: "Bright Bronze", brand: "Army Painter", type: "Base", colourFamily: "Metallics", description: "Warm reddish-brown metallic. For bronze weapons and armour.", hex: "#9B7B52" },
+  { id: "army-painter-plate-mail", name: "Plate Mail Metal", brand: "Army Painter", type: "Base", colourFamily: "Metallics", description: "Dull grey metallic. Classic colour for armoured knights.", hex: "#7B8B9B" },
+  { id: "army-painter-mithril", name: "Mithril", brand: "Army Painter", type: "Base", colourFamily: "Metallics", description: "Bright cool silver. Excellent for shiny metallic highlights.", hex: "#C8D0D8" },
+  { id: "army-painter-warpaints-purple", name: "Alien Purple", brand: "Army Painter", type: "Base", colourFamily: "Purples & Pinks", description: "Vivid mid-tone purple. Bold colour for fantasy robes and alien creatures.", hex: "#6A2890" },
+  { id: "army-painter-crystal-blue", name: "Crystal Blue", brand: "Army Painter", type: "Base", colourFamily: "Blues", description: "Bright sky blue. Clean, vivid blue for magical effects and bright armour.", hex: "#4890D0" },
+  { id: "army-painter-skeleton-bone", name: "Skeleton Bone", brand: "Army Painter", type: "Base", colourFamily: "Whites & Creams", description: "Warm off-white with slight yellow. Perfect for bones and undead models.", hex: "#E0D0A8" },
+  { id: "army-painter-warpaints-shade-strong-tone", name: "Strong Tone Ink", brand: "Army Painter", type: "Shade", colourFamily: "Browns & Leathers", description: "Warm brown shade. Similar to Agrax Earthshade — versatile wash for most surfaces.", hex: "#5A4020" },
+  { id: "army-painter-warpaints-shade-dark-tone", name: "Dark Tone Ink", brand: "Army Painter", type: "Shade", colourFamily: "Blacks & Whites", description: "Near-black shade. Deep shadow wash similar to Nuln Oil.", hex: "#1A1A2A" },
+  { id: "army-painter-warpaints-shade-red-tone", name: "Red Tone Ink", brand: "Army Painter", type: "Shade", colourFamily: "Reds", description: "Dark red shade. Adds depth to red armour and flesh tones.", hex: "#5A1010" },
+  { id: "army-painter-warpaints-shade-blue-tone", name: "Blue Tone Ink", brand: "Army Painter", type: "Shade", colourFamily: "Blues", description: "Deep blue shade. Shades blue armour and cold toned surfaces.", hex: "#1A2848" },
+  { id: "army-painter-warpaints-shade-green-tone", name: "Green Tone Ink", brand: "Army Painter", type: "Shade", colourFamily: "Greens", description: "Dark green shade. Adds depth to green armour and vegetation.", hex: "#1A3A1A" },
+
+  // ─── AK INTERACTIVE ─────────────────────────────────────────────────────────
+  { id: "ak-russian-brown", name: "Russian Brown", brand: "AK Interactive", type: "Base", colourFamily: "Browns & Leathers", description: "Deep brown with a slight red undertone. Historic Russian military colour.", hex: "#6B4F3A" },
+  { id: "ak-field-drab", name: "Field Drab", brand: "AK Interactive", type: "Base", colourFamily: "Greens", description: "Muted warm olive-green. Perfect for field uniforms and camouflage.", hex: "#6B7A52" },
+  { id: "ak-splinter-camouflage", name: "Splinter Camouflage", brand: "AK Interactive", type: "Base", colourFamily: "Cool Greys", description: "Cool pale grey. Used in modern digital and splinter camouflage patterns.", hex: "#9AB0B8" },
+  { id: "ak-insignia-yellow", name: "Insignia Yellow", brand: "AK Interactive", type: "Base", colourFamily: "Yellows & Oranges", description: "Bright punchy yellow. Good for aircraft markings and bold details.", hex: "#FFD700" },
+  { id: "ak-steel", name: "Steel", brand: "AK Interactive", type: "Base", colourFamily: "Metallics", description: "Bright metallic silver with realistic sheen. Industrial metal base.", hex: "#C8C8D0" },
+  { id: "ak-copper", name: "Copper", brand: "AK Interactive", type: "Base", colourFamily: "Metallics", description: "Warm reddish-brown metallic. For copper details and ancient metal.", hex: "#B87333" },
+  { id: "ak-track-colour", name: "Track Colour", brand: "AK Interactive", type: "Base", colourFamily: "Blacks & Whites", description: "Very dark weathered grey-black. For tank tracks and worn metal.", hex: "#3A3A42" },
+  { id: "ak-dark-sea-blue", name: "Dark Sea Blue", brand: "AK Interactive", type: "Base", colourFamily: "Blues", description: "Deep navy-blue. Naval colour for ships and modern military.", hex: "#1A2F52" },
+  { id: "ak-uniform-grey", name: "Uniform Grey", brand: "AK Interactive", type: "Base", colourFamily: "Cool Greys", description: "Medium neutral grey. Historic military uniform basecoat.", hex: "#7A8A9A" },
+  { id: "ak-tank-grey", name: "Tank Grey", brand: "AK Interactive", type: "Base", colourFamily: "Warm Greys", description: "Slightly warm medium grey. Realistic for tank bodywork.", hex: "#8B8B8B" },
+  { id: "ak-dunkelgelb", name: "Dunkelgelb", brand: "AK Interactive", type: "Base", colourFamily: "Yellows & Oranges", description: "Classic WWII German dark yellow. Warm sandy-ochre for German armour.", hex: "#C8A850" },
+  { id: "ak-panzer-grey", name: "Panzer Grey", brand: "AK Interactive", type: "Base", colourFamily: "Cool Greys", description: "Dark blue-grey. Classic early WWII German armour colour.", hex: "#4A5060" },
+  { id: "ak-olive-drab", name: "Olive Drab", brand: "AK Interactive", type: "Base", colourFamily: "Greens", description: "Classic US military olive-green. Warm, slightly muted green for vehicles.", hex: "#6B7040" },
+  { id: "ak-burnt-umber-wash", name: "Burnt Umber Filter/Wash", brand: "AK Interactive", type: "Shade", colourFamily: "Browns & Leathers", description: "Deep warm reddish-brown wash. Used for panel line washes on vehicles.", hex: "#4A2818" },
+  { id: "ak-gun-metal", name: "Gun Metal", brand: "AK Interactive", type: "Base", colourFamily: "Metallics", description: "Realistic dull grey-silver metallic. Good for metal details and weapons.", hex: "#606070" },
+
 ];
