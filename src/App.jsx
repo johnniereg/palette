@@ -2,7 +2,8 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import { useAuth } from './hooks/useAuth'
 import { NavBar } from './components/NavBar'
 import { Login } from './pages/Login'
-import { Collection } from './pages/Collection'
+import { MyPaints } from './pages/MyPaints'
+import { Browse } from './pages/Browse'
 import { Palettes } from './pages/Palettes'
 import { PaletteDetail } from './pages/PaletteDetail'
 import { Recipes } from './pages/Recipes'
@@ -43,11 +44,20 @@ function App() {
       <Routes>
         <Route
           path="/"
-          element={user ? <Navigate to="/collection" replace /> : <Login />}
+          element={user ? <Navigate to="/my-paints" replace /> : <Login />}
         />
         <Route
+          path="/my-paints"
+          element={<ProtectedRoute element={<MyPaints />} />}
+        />
+        <Route
+          path="/browse"
+          element={<ProtectedRoute element={<Browse />} />}
+        />
+        {/* Legacy redirect — old /collection links still work */}
+        <Route
           path="/collection"
-          element={<ProtectedRoute element={<Collection />} />}
+          element={<Navigate to="/my-paints" replace />}
         />
         <Route
           path="/palettes"

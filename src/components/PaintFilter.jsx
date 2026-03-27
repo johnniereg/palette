@@ -11,7 +11,8 @@ export function PaintFilter({
   onShowOnlyOwnedChange,
   brands,
   types,
-  families
+  families,
+  hideSwitchOwned = false,
 }) {
   return (
     <div className="bg-white rounded-lg shadow-md p-4 space-y-4 sticky top-0 z-10">
@@ -86,19 +87,21 @@ export function PaintFilter({
         </select>
       </div>
 
-      {/* Owned Filter */}
-      <div className="flex items-center gap-3">
-        <input
-          type="checkbox"
-          id="ownedFilter"
-          checked={showOnlyOwned}
-          onChange={(e) => onShowOnlyOwnedChange(e.target.checked)}
-          className="w-4 h-4 text-blue-600 rounded border-slate-300 focus:ring-2 focus:ring-blue-500"
-        />
-        <label htmlFor="ownedFilter" className="text-sm font-medium text-slate-700">
-          Only Paints I Own
-        </label>
-      </div>
+      {/* Owned Filter — hidden on Browse page */}
+      {!hideSwitchOwned && (
+        <div className="flex items-center gap-3">
+          <input
+            type="checkbox"
+            id="ownedFilter"
+            checked={showOnlyOwned}
+            onChange={(e) => onShowOnlyOwnedChange(e.target.checked)}
+            className="w-4 h-4 text-blue-600 rounded border-slate-300 focus:ring-2 focus:ring-blue-500"
+          />
+          <label htmlFor="ownedFilter" className="text-sm font-medium text-slate-700">
+            Only Paints I Own
+          </label>
+        </div>
+      )}
     </div>
   )
 }
